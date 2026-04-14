@@ -26,9 +26,11 @@ andmebaasiga seotud sql kood ja konspektid
  - boolean, bool, bit - loogiline tüüp
  - date, time, datetime - kuupäeva
 
-   ## Piirangud
+   ## Piirangug
+   ```
    1. Primary key
    2. Foreign Key
    3. Unique
    4. Not null
    5. Check
+   ```
