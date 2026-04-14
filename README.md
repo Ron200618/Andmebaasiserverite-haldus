@@ -34,3 +34,12 @@ andmebaasiga seotud sql kood ja konspektid
    4. Not null
    5. Check
    ```
+
+
+   ## tabelivahelised seosed
+  - üks - ühele (nt mees -- naine)
+  - üks - mitmele (õpilane käib erinevates õppeainetes)
+   <img width="1348" height="658" alt="{1228E96E-4B6D-4522-99F2-4E7B4FD3D727}" src="https://github.com/user-attachments/assets/3ac2b1be-4d75-41f7-9f6c-b8d73894536d" />
+
+   - mitu - mitmele (nt õpilane - õpetaja)
+
