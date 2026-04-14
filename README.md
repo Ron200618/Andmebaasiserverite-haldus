@@ -14,7 +14,7 @@ andmebaasiga seotud sql kood ja konspektid
  - primaarne võti -PK- Primary Key - veerg (tavaliselt nimega id) unikaalse identifikatooriga, mis erisatb igat kirjet
  - välisvõti (võõrvõti) -FK Foreign Key - veerg, mis loob seose teise tabeli primaarvõtmega.
 
- - ##Andmetüüpid
+ - ## Andmetüüpid
  - INT, float, decimal(6,2) - numbrilised
  - varchar(50), char(6) - tekst/sümboolid
  - boolean, bool, bit - loogiline tüüp
