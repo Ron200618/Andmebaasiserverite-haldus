@@ -87,7 +87,6 @@ SELECT * FROM opetamine;
 ## stored predecures
 salvestatud protseduriid - sama mis on funktsioonid programeerimises - mingi tegevus (tegevused), mida saab automaatselt teha (INSERT, SELECT, UPDATE, DELETE)
 ```SQL
-select * from categories;
 -- proceduur, mis täidab tabeli
 CREATE PROCEDURE lisakategooria
 @nimi varchar(15)
