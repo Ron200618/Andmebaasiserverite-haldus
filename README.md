@@ -100,6 +100,17 @@ END
 EXEC lisakategooria 'test';
 ```
 
-
-
+```
+--proceduur, mis kustutab tabelist id järgi
+Create procedure kustutdaidjargi
+@id int
+AS
+BEGIN
+SELECT * FROM categories;
+DELETE FROM categories WHERE category_id=@id;
+SELECT * FROM categories;
+END
+--kutse
+EXEC kustkustutdaidjargi 3;
+```
 
