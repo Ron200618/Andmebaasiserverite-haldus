@@ -82,3 +82,25 @@ SELECT * FROM opetamine;
 
 <img width="843" height="450" alt="{577327C2-0B15-4128-B49D-551F85499BA2}" src="https://github.com/user-attachments/assets/c84ba17c-b8d6-46e6-935d-25aadd8666ad" />
 
+
+
+## stored predecures
+salvestatud protseduriid - sama mis on funktsioonid programeerimises - mingi tegevus (tegevused), mida saab automaatselt teha (INSERT, SELECT, UPDATE, DELETE)
+```SQL
+select * from categories;
+-- proceduur, mis täidab tabeli
+CREATE PROCEDURE lisakategooria
+@nimi varchar(15)
+AS 
+BEGIN
+	insert into categories
+	values (@nimi);
+	SELECT * FROM categories;
+END
+--kutse
+EXEC lisakategooria 'test';
+```
+
+
+
+
