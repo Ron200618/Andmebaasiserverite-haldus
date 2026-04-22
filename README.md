@@ -114,3 +114,6 @@ END
 EXEC kustkustutdaidjargi 3;
 ```
 
+<img width="849" height="381" alt="{CFDF7695-20E6-4F58-BDDD-646C15B794E6}" src="https://github.com/user-attachments/assets/3df06a1a-66a4-48f8-9dfc-8b15022140cc" />
+
+
