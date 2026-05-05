@@ -67,3 +67,21 @@ insert into auto (autonumber, mark, mudell, v_aasta, varv, hind) values ('350tnE
 insert into auto (autonumber, mark, mudell, v_aasta, varv, hind) values ('310mbc', 'Dodge', 'Nitro', 2010, 'Fuscia', '€359,98');
 insert into auto (autonumber, mark, mudell, v_aasta, varv, hind) values ('888R1J', 'Cadillac', 'CTS', 2010, 'Orange', '€3791,33');
 ```
+
+
+```SQL
+-- näita kõik
+Select * from auto;
+-- näita ainult mark,mudel ja hind
+Select mark, mudell, hind from auto;
+-- tingimused
+-- sorteerimine - order by -kasvavalt, DEC -  kahanevalt
+select mark, mudell, hind
+from auto
+order by hind DESC;
+
+```
+
+<img width="223" height="59" alt="{460D8C2C-5F5C-4A73-9A7D-6D9694BA7E82}" src="https://github.com/user-attachments/assets/826c494f-b1d7-4ffb-8be8-880ce90e40e0" />
+
+<img width="276" height="408" alt="{61AD9150-01DC-4029-9D87-2DEAE3B95136}" src="https://github.com/user-attachments/assets/6c702e23-4f0a-4080-afad-5a241f7a473e" />
