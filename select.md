@@ -89,3 +89,47 @@ order by hind DESC;
 <img width="184" height="54" alt="{3273BF6E-9567-468B-A3B7-AF4C48A793F4}" src="https://github.com/user-attachments/assets/ae756085-7601-46ab-bf4f-5c7b5c41d10d" />
 
 <img width="89" height="250" alt="{53B91E4F-97BD-4E59-B33A-E6A99055B9C5}" src="https://github.com/user-attachments/assets/42624340-d540-4eb1-a388-21b0a125fec1" />
+
+<img width="190" height="62" alt="{7717F46A-79D1-445A-A81E-ED88631A16BB}" src="https://github.com/user-attachments/assets/61e9e58e-74e3-43b1-a8b8-7db2a7dbbc0f" />
+
+<img width="152" height="385" alt="{53A6CE96-3928-4A82-AF72-B5457C0A81FC}" src="https://github.com/user-attachments/assets/154aa6fe-25aa-4a86-8f57-d857f2ae3fb0" />
+
+<img width="314" height="172" alt="{99A077FB-9347-41DC-A5BB-9AA2958C8AA6}" src="https://github.com/user-attachments/assets/436c9cb6-3c6b-4817-a3cd-445190b7e321" />
+
+<img width="241" height="150" alt="{7CB0988A-54C4-48E6-9186-1CE5963EBA6C}" src="https://github.com/user-attachments/assets/a91ada0f-e2b0-4fb0-92e5-d4d534720463" />
+
+<img width="381" height="68" alt="{61D37EB1-1BB1-4EAC-891A-13C1DAEF6DE1}" src="https://github.com/user-attachments/assets/8b5ecc38-9df7-4d91-a359-e873541d728c" />
+
+<img width="324" height="387" alt="{972D9C15-A5E4-49BD-8AC3-CC6E07F98611}" src="https://github.com/user-attachments/assets/b13b132f-8db0-4425-9abd-30c5c58352d0" />
+
+```SQL
+--vaade loomine -VIEW
+CREATE VIEW pontiacAutod
+AS
+select mark, autonumber, hind
+FROM AUTO
+WHERE MARK LIKE 'Pontiac';
+
+-- view kasutamine
+Select * from pontiacAutod;
+```
+
+<img width="223" height="36" alt="{4CAE0CB9-F417-4389-9CCA-7C7E7B47F8E5}" src="https://github.com/user-attachments/assets/9181713f-88c1-492a-95c4-5db54c749c95" />
+
+<img width="265" height="150" alt="{6A8FB00F-496F-4140-B9AD-29672D13CE73}" src="https://github.com/user-attachments/assets/c39c2227-db40-4e9c-a106-b629fd539a2e" />
+
+<img width="346" height="139" alt="{FD123CF1-628E-4CE5-BACC-7E2FF1098EB7}" src="https://github.com/user-attachments/assets/dd16804c-95a4-419a-bbfe-78b6a567a8aa" />
+
+<img width="410" height="149" alt="{1353C0B0-00DC-4848-9478-4A68EECF9C85}" src="https://github.com/user-attachments/assets/1d8d71f4-8295-4fa9-a39d-5c5d6ebef7d8" />
+
+<img width="364" height="70" alt="{A4FC3576-E884-4AC2-B124-3DECCC89E649}" src="https://github.com/user-attachments/assets/49be4a4c-fb30-429f-8a1c-dbdb9f846204" />
+
+```sql
+--Leia iga marki kohta keskmine autohind
+SELECT mark, AVG(hind) AS 'auto keskmine hind'
+FROM auto
+GROUP BY mark;
+```
+
+<img width="240" height="383" alt="{2C09EDE5-6C3A-4391-A6DD-AEAF16927AFF}" src="https://github.com/user-attachments/assets/6ac9a1dc-5c41-4ec4-8575-41fd71f2b140" />
+
