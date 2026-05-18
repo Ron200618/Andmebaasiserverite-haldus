@@ -58,7 +58,7 @@ db_datawriter → võib kirjutada INSERT, UPDATE, DELETE
 -------------------------------------------------------------------------------
 # kasutaja õiguste kontroll
 
-1. tuleb sisselogida kasutajana directorRon. Connect --->
+1. tuleb sisselogida kasutajana directorRon. Connect ---> Database Engine
 
 
 
