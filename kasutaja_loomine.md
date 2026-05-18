@@ -142,5 +142,68 @@ GRANT UPDATE (movieCost, movieDir)
 ON movies
 TO Produtsent;
     
+-- 2
+    Create database MovieBase;
 
-    
+use MovieBase;
+
+
+CREATE TABLE movies(
+Id int primary key identity(1,1),
+moviesNimi varchar(25) not null,
+moviesYear int,
+movieDir text,
+movieCost money);
+
+insert into movies (moviesNimi,moviesYear,movieDir,movieCost)
+values ('Simpson2', '2002', 'Fredrich', 7)
+
+select * from movies
+
+CREATE TABLE guest(
+id int primary key identity(1,1),
+name varchar(25) not null);
+
+insert into guest (name)
+values ('Piis')
+
+select * from movies
+select * from guest
+
+grant delete on movies to Produtsent;
+
+grant SELECT on movies to Produtsent;
+grant update on movies to Produtsent;
+
+--- 1
+Create database kasutajaBaas;
+
+use kasutajaBaas;
+CREATE TABLE puhkus(
+puhkusdId int primary key identity(1,1),
+nimetus varchar(25) not null,
+algus date,
+lopp date,
+kirjeldus text);
+insert into puhkus(nimetus,algus,lopp)
+values ('isapuhkus', '2026-02-15', '2026-02-25')
+
+select * from puhkus;
+--Security -> Logins -> New login
+
+-- GRANT - õiguste määramine
+-- DENY - õiguste keelamine
+
+-- db_datareader - SELECT 
+-- db_datawriter - INSERT, DELETE, UPDATE
+
+-- anname kasutajale DirectorRon õigus
+--ainult kustutuda ja uuendada tabelit
+-- (DELETE, UPDATE, SELECT)
+
+grant delete on puhkus to RonDirector;
+grant update on puhkus to RonDirector;
+grant SELECT on puhkus to RonDirector;
+
+-- keelame INSERT
+grant INSERT on puhkus to RonDirector;
