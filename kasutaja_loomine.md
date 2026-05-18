@@ -99,7 +99,8 @@ INSERT	Lisamine
 UPDATE	Muutmine
 DELETE	Kustutamine
 
->>>>>pilt
+<img width="553" height="759" alt="{E3DA095D-3DD0-4B4C-BB54-146967BDB45A}" src="https://github.com/user-attachments/assets/91f253c4-db6d-4b58-8b40-9bf3c26d9261" />
+
 
 
 
