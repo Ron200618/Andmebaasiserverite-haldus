@@ -60,6 +60,9 @@ db_datawriter → võib kirjutada INSERT, UPDATE, DELETE
 
 1. tuleb sisselogida kasutajana directorRon. Connect ---> Database Engine
 
+   <img width="306" height="310" alt="{2712AE50-4B47-46BA-997E-5D0BCB159033}" src="https://github.com/user-attachments/assets/4338ff3e-8e07-4952-9104-9772a04e32ab" />
+
+
    <img width="518" height="516" alt="{C372D1A2-A003-42B5-B493-FC0AF647B12C}" src="https://github.com/user-attachments/assets/1e98ef3b-ec18-4ece-94d5-28a143b939ad" />
 
 
