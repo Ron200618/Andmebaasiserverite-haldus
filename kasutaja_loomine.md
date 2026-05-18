@@ -85,6 +85,14 @@ Vali: SQL Server and Windows Authentication mode
 GRANT käsud õiguste jagamiseks
 GRANT käsuga antakse kasutajale õigused.
 
+<img width="931" height="975" alt="{4C168EB7-FB7C-4E62-BBA4-6B1A6C65C84B}" src="https://github.com/user-attachments/assets/39561d55-f746-4efa-be47-15009197d30f" />
+
+
+
+
+
+
+
 Käsk	Tähendus
 SELECT	Lugemine
 INSERT	Lisamine
