@@ -55,6 +55,12 @@ db_datawriter → võib kirjutada INSERT, UPDATE, DELETE
 
 <img width="712" height="195" alt="{AFF3D566-2A9D-477A-B220-55D28B1A6E85}" src="https://github.com/user-attachments/assets/9dc1addc-8209-4ea9-9290-7de9189ff739" />
 
+-------------------------------------------------------------------------------
+# kasutaja õiguste kontroll
+
+1. tuleb sisselogida kasutajana directorRon. Connect --->
+
+
 
 SQL Server Authentication Mode muutmine
 Kui ilmub viga: Error 18456, siis on tavaliselt lubatud ainult Windows Authentication.
