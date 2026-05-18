@@ -43,11 +43,14 @@ Tee paremklikk:  New User...
 Seosta kasutaja loginiga
 <img width="292" height="273" alt="{6497989F-0BE9-4DD8-A914-A2352AEE891B}" src="https://github.com/user-attachments/assets/e2d8769c-8b40-4791-bcd0-f880d2ab0bf1" />
 
-Membership ja õigused
+## Membership ja õigused
 Menüüst Membership saab määrata kasutaja rollid.
 
-db_datareader → võib lugeda
-db_datawriter → võib kirjutada
+db_datareader → võib lugeda SELECT
+db_datawriter → võib kirjutada INSERT, UPDATE, DELETE
+
+
+
 <img width="516" height="559" alt="{8EFECA76-BBB1-4F49-9016-30BF73A77B21}" src="https://github.com/user-attachments/assets/4bff1876-4dba-4073-84f2-0a0cc2de3f2d" />
 
 SQL Server Authentication Mode muutmine
