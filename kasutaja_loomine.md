@@ -124,6 +124,14 @@ Luua kasutaja Produtsent parooliga director, kellel on järgmised õigused:
 -- anname kasutajale DirectorRon õigus
 --ainult kustutuda ja uuendada tabelit
 -- (DELETE, UPDATE, SELECT)
+
+grant delete on puhkus to RonDirector;
+grant update on puhkus to RonDirector;
+grant SELECT on puhkus to RonDirector;
+
+-- keelame INSERT
+DENY INSERT on puhkus to RonDirector;
+
 ```
 Õigus vaadata ja uuendada tabeli movies välju movieDir ja movieCost + lisada üks enda valitud privileeg.
 Õigus vaadata ja lisada kirjeid tabelisse guest.
