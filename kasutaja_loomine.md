@@ -60,6 +60,9 @@ db_datawriter → võib kirjutada INSERT, UPDATE, DELETE
 
 1. tuleb sisselogida kasutajana directorRon. Connect ---> Database Engine
 
+   <img width="518" height="516" alt="{C372D1A2-A003-42B5-B493-FC0AF647B12C}" src="https://github.com/user-attachments/assets/1e98ef3b-ec18-4ece-94d5-28a143b939ad" />
+
+
 
 
 SQL Server Authentication Mode muutmine
