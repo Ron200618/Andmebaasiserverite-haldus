@@ -113,6 +113,18 @@ guest (id, name)
 Lisada vähemalt 7 kirjet.
 
 Luua kasutaja Produtsent parooliga director, kellel on järgmised õigused:
+
+```
+-- GRANT - õiguste määramine
+-- DENY - õiguste keelamine
+
+-- db_datareader - SELECT 
+-- db_datawriter - INSERT, DELETE, UPDATE
+
+-- anname kasutajale DirectorRon õigus
+--ainult kustutuda ja uuendada tabelit
+-- (DELETE, UPDATE, SELECT)
+```
 Õigus vaadata ja uuendada tabeli movies välju movieDir ja movieCost + lisada üks enda valitud privileeg.
 Õigus vaadata ja lisada kirjeid tabelisse guest.
 Keela andmete kustutamine tabelis.
