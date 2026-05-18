@@ -69,7 +69,8 @@ db_datawriter → võib kirjutada INSERT, UPDATE, DELETE
    <img width="867" height="658" alt="{87D66258-9CF6-495F-B490-2EED37A25DD0}" src="https://github.com/user-attachments/assets/93168b9a-959f-4b66-91f5-95ab02595420" />
 
    3. kontrollime tegevus, mis ei ole lubatud kasutajale, näiteks tabeli loomine
-<img width="546" height="464" alt="{1599F276-E0A6-455F-9565-890070E68625}" src="https://github.com/user-attachments/assets/92e968ca-b3be-4d6c-a4f4-51345e4106d3" />
+<img width="554" height="570" alt="{93476A54-8DA4-47E3-9EA2-857D7CECFDFE}" src="https://github.com/user-attachments/assets/a20f08d8-6136-4c8a-95e5-310d44138172" />
+
 
 
 
