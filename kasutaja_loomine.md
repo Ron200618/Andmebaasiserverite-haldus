@@ -8,8 +8,9 @@ SQL kasutatakse kahte peamist autentimise tüüpi
 . Sellel puhul kasutatakse kasutajaid sama kasutajaandmed, millega logitakse windows operatsioonsüsteemi.
 (kasutajanimi ja parool on seotud SQL)
 
-2. SQK Server authentication
+2. SQl Server authentication
  Sellel puhul luuakse kasutaja otse SQL servise
+kasutaja ei ole
 
 
 
@@ -32,8 +33,8 @@ Server Roles
 Tavaliselt piisab rollist: public
 
 
->>>>>pilt
-3. Andmebaasi kasutaja loomine (User)
+<img width="756" height="678" alt="{A9F945E9-3091-4B87-8FE7-9FE7534AD65C}" src="https://github.com/user-attachments/assets/4b72b2e5-850e-4088-88fc-e32bbf47b61a" />
+2. Andmebaasi kasutaja loomine (User)
 Ava:
 
 Database → Security → Users
