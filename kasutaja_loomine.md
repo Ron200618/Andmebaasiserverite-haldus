@@ -41,7 +41,8 @@ Database → Security → Users
 Tee paremklikk:  New User...
 
 Seosta kasutaja loginiga
->>>>>pilt
+<img width="292" height="273" alt="{6497989F-0BE9-4DD8-A914-A2352AEE891B}" src="https://github.com/user-attachments/assets/e2d8769c-8b40-4791-bcd0-f880d2ab0bf1" />
+
 Membership ja õigused
 Menüüst Membership saab määrata kasutaja rollid.
 
