@@ -65,6 +65,10 @@ db_datawriter → võib kirjutada INSERT, UPDATE, DELETE
 
    <img width="518" height="516" alt="{C372D1A2-A003-42B5-B493-FC0AF647B12C}" src="https://github.com/user-attachments/assets/1e98ef3b-ec18-4ece-94d5-28a143b939ad" />
 
+   2. Saab tabeli sisu näha ja sisestada uus kiri.
+   <img width="867" height="658" alt="{87D66258-9CF6-495F-B490-2EED37A25DD0}" src="https://github.com/user-attachments/assets/93168b9a-959f-4b66-91f5-95ab02595420" />
+
+
 
 
 
