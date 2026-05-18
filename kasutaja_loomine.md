@@ -47,7 +47,8 @@ Menüüst Membership saab määrata kasutaja rollid.
 
 db_datareader → võib lugeda
 db_datawriter → võib kirjutada
->>>>>pilt
+<img width="516" height="559" alt="{8EFECA76-BBB1-4F49-9016-30BF73A77B21}" src="https://github.com/user-attachments/assets/4bff1876-4dba-4073-84f2-0a0cc2de3f2d" />
+
 SQL Server Authentication Mode muutmine
 Kui ilmub viga: Error 18456, siis on tavaliselt lubatud ainult Windows Authentication.
 Lahendus
