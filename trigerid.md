@@ -257,6 +257,10 @@ select * from logiElanikud;
 ```
 <img width="486" height="451" alt="{6298E87D-742D-464F-813F-5B0FDD282C8E}" src="https://github.com/user-attachments/assets/80631742-f36f-4245-a745-8320ad6e1cf2" />
 
+# XAMPP / MariaDB päästikud / Triggers
+
+<img width="672" height="631" alt="{2AE2FBC3-4BE5-4120-8874-183CF66CBAEB}" src="https://github.com/user-attachments/assets/41c9c7a2-e311-4f4f-83d6-503419bb1d43" />
+
 
 
 
