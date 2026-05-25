@@ -268,6 +268,16 @@ Kontrolliks
 tulemus logi tabelis.
 <img width="716" height="51" alt="{FAB94F16-AE5F-4BAB-89C0-03F1F6502AE4}" src="https://github.com/user-attachments/assets/a4f93b49-2666-4665-a9dd-fe2adca3e35a" />
 
+Trigger, mis näeb kustutatud asju
+<img width="615" height="386" alt="{327E84B2-ECDB-43F9-8EF1-4A303D7F643F}" src="https://github.com/user-attachments/assets/df2ad7da-46f5-428b-a0ac-6311d75d1fe6" />
+
+Kontroll
+<img width="719" height="49" alt="{31299511-92C4-4363-B397-F512EEBAEE70}" src="https://github.com/user-attachments/assets/a215bdfb-4060-46ad-aa1b-d1c12161f140" />
+
+# update
+<img width="625" height="567" alt="{FB912076-F9AC-4DD7-AA68-B2A05864A386}" src="https://github.com/user-attachments/assets/ef9df20a-9a0d-4199-94df-a1983568ba54" />
+
+<img width="703" height="68" alt="{9B541247-0790-4DA3-82BC-63C5547B1A3C}" src="https://github.com/user-attachments/assets/5e9fbda3-519e-40d3-b799-b8ec65c123db" />
 
 
 
