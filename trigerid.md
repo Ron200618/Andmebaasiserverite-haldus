@@ -26,7 +26,7 @@ kasutaja varchar(25),
 aeg datetime,
 andmed text);
 ```
-
+<img width="567" height="673" alt="{01DFFA58-0805-402D-A991-F61F351CB497}" src="https://github.com/user-attachments/assets/dc78e48d-2d2e-4a96-86ad-f3905ace129c" />
 ```sql
 --1. triger lisatud andmete jälgimiseks tabelis linnad.
 --Jälgib andmete sisestamine tabelisse ja teeb vastavva kirje logi-tabelis
@@ -73,9 +73,37 @@ delete from linnad where linnId=2;
 SELECT * from linnad;
 select * from logi;
 ```
-
-<img width="567" height="673" alt="{01DFFA58-0805-402D-A991-F61F351CB497}" src="https://github.com/user-attachments/assets/dc78e48d-2d2e-4a96-86ad-f3905ace129c" />
-
 <img width="522" height="686" alt="{A6431287-D57F-4263-96FB-A68F943FCADB}" src="https://github.com/user-attachments/assets/414aed26-9cba-4f84-8e68-c8049dda9aec" />
+
+```sql
+--3.UPDATE TRIGGER -jälgib uuendused/muutuse tabelis linnad
+--ja teeb vastava kirje tabelis logi
+
+create trigger linnaUuendamine
+ON linnad --tabel, mida triger jälgib
+FOR UPDATE
+AS
+insert into logi(kasutaja, aeg, andmed)
+select
+SYSTEM_USER, -- sisselogitud user
+GETDATE(),
+CONCAT('vana andmed:',
+deleted.linnanimi,', ',deleted.maakond, ', ' ,deleted.rahvaarv,
+' ||| uued andmed: ',
+inserted.linnanimi, ', ' ,inserted.maakond,', ', inserted.rahvaarv) 
+FROM deleted inner join inserted
+on deleted.linnId=inserted.linnId;
+
+--kontroll
+update linnad SET linnanimi='Tallinn22', rahvaarv=70000
+where linnId=1;
+
+SELECT * FROM linnad;
+SELECT * FROM logi;
+```
+
+<img width="533" height="438" alt="{D9372B27-7ACC-4B44-ACAF-6F52EC578531}" src="https://github.com/user-attachments/assets/a92052d6-fa0f-45c5-befd-2888597f1130" />
+
+
 
 
