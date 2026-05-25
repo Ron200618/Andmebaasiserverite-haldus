@@ -53,4 +53,6 @@ select * from logi;
 
 <img width="567" height="673" alt="{01DFFA58-0805-402D-A991-F61F351CB497}" src="https://github.com/user-attachments/assets/dc78e48d-2d2e-4a96-86ad-f3905ace129c" />
 
+<img width="522" height="686" alt="{A6431287-D57F-4263-96FB-A68F943FCADB}" src="https://github.com/user-attachments/assets/414aed26-9cba-4f84-8e68-c8049dda9aec" />
+
 
