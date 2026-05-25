@@ -147,6 +147,120 @@ select * from logi;
 ```
 <img width="559" height="606" alt="{396D2D21-61D0-41FD-8893-0562F9DA4975}" src="https://github.com/user-attachments/assets/5d22ccbc-ef24-4d40-b768-c5e389d2227c" />
 
+# kasutaja õigused triger ja piirang
+<img width="518" height="477" alt="{8019C8FC-624E-47E2-9AA4-479204CACC35}" src="https://github.com/user-attachments/assets/68159a2d-26d5-4d8d-a09d-7a84a887092c" />
+
+
+
+# iseseisev töö
+```sql
+-- tabel
+create table Elanikud(
+Id int primary key identity (1,1),
+nimi varchar(25),
+vanus int,
+aadress varchar(25),
+maja_number int)
+
+insert into elanikud(nimi,vanus,aadress, maja_number)
+VALUES('Bob',  25, 'Kotka_12', 12)
+
+-- logi
+CREATE TABLE logiElanikud(
+id int primary key identity(1,1),
+kasutaja varchar(25),
+aeg datetime,
+andmed text);
+
+-- trigger
+
+create trigger ElanikuUuendus
+ON Elanikud --tabel, mida triger jälgib
+FOR insert, delete
+AS
+BEGIN
+SET NOCOUNT ON;
+	insert into LogiElanikud(kasutaja, aeg, andmed)
+	select
+	SYSTEM_USER, -- sisselogitud user
+	GETDATE(),
+	CONCAT('LISATUD:', inserted.nimi,', ',
+	inserted.aadress, ', ' ,inserted.maja_number)
+	FROM INSERTED
+
+	UNION all
+
+	select
+	SYSTEM_USER, -- sisselogitud user
+	GETDATE(),
+	CONCAT('kustutatud:', deleted.nimi,', ',
+	deleted.aadress, ', ' ,deleted.maja_number)
+	FROM deleted;
+end;
+
+delete from Elanikud where Id=2;
+
+insert into elanikud(nimi,vanus,aadress, maja_number)
+VALUES('Ron',  18, 'Kotka_12', 12)
+
+SELECT * from Elanikud;
+select * from logiElanikud;
+```
+
+<img width="467" height="392" alt="{0B9012B7-ADFD-4606-BC82-71439A5FDC50}" src="https://github.com/user-attachments/assets/ad1bce8f-c803-45a0-942a-41f2dfb80641" />
+
+
+
+```sql
+-- triger 2
+
+create trigger Elanikulisamine
+ON Elanikud --tabel, mida triger jälgib
+FOR INSERT
+AS
+insert into logiElanikud(kasutaja, aeg, andmed)
+select
+SYSTEM_USER, -- sisselogitud user
+GETDATE(),
+CONCAT('LISATUD:', inserted.nimi,', ',
+inserted.aadress, ', ' ,inserted.maja_number)
+FROM inserted;
+
+insert into elanikud(nimi,vanus,aadress, maja_number)
+VALUES('Karl',  18, 'Tondi_12', 15)
+
+SELECT * from Elanikud;
+select * from logiElanikud;
+```
+<img width="534" height="407" alt="{3E3C9CB4-7ADD-444C-AA38-F926E8381AA9}" src="https://github.com/user-attachments/assets/75c2dcbc-3ce4-4f53-95d8-3f18a6860167" />
+
+
+```sql
+-- triger 3
+
+create trigger ElanikuKustutamine
+ON Elanikud --tabel, mida triger jälgib
+FOR DELETE
+AS
+insert into LogiElanikud(kasutaja, aeg, andmed)
+select
+SYSTEM_USER, -- sisselogitud user
+GETDATE(),
+CONCAT('kustutatud:', deleted.nimi,', ',
+deleted.aadress, ', ' ,deleted.maja_number)
+FROM deleted;
+
+delete from Elanikud where Id=3;
+
+SELECT * from Elanikud;
+select * from logiElanikud;
+```
+<img width="486" height="451" alt="{6298E87D-742D-464F-813F-5B0FDD282C8E}" src="https://github.com/user-attachments/assets/80631742-f36f-4245-a745-8320ad6e1cf2" />
+
+
+
+
+
 
 
 
