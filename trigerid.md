@@ -279,6 +279,11 @@ Kontroll
 
 <img width="703" height="68" alt="{9B541247-0790-4DA3-82BC-63C5547B1A3C}" src="https://github.com/user-attachments/assets/5e9fbda3-519e-40d3-b799-b8ec65c123db" />
 
+# kasutaja õigused 
+
+<img width="768" height="252" alt="{2196BF59-98D0-482A-9D0C-80C8708ECBD5}" src="https://github.com/user-attachments/assets/6cb35c60-d24d-47c5-8d32-4e694825461f" />
+
+
 
 
 
