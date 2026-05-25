@@ -51,6 +51,29 @@ SELECT * from linnad;
 select * from logi;
 ```
 
+```sql
+--2. DELETE Triger - jälgib kustutamine tabelis linnad 
+--ja teeb vastava kirje logi tabelisse.
+
+create trigger linnaKustutamine
+ON linnad --tabel, mida triger jälgib
+FOR DELETE
+AS
+insert into logi(kasutaja, aeg, andmed)
+select
+SYSTEM_USER, -- sisselogitud user
+GETDATE(),
+CONCAT('kustutatud:', deleted.linnanimi,', ',
+deleted.maakond, ', ' ,deleted.rahvaarv)
+FROM deleted;
+
+--kontroll
+delete from linnad where linnId=2;
+
+SELECT * from linnad;
+select * from logi;
+```
+
 <img width="567" height="673" alt="{01DFFA58-0805-402D-A991-F61F351CB497}" src="https://github.com/user-attachments/assets/dc78e48d-2d2e-4a96-86ad-f3905ace129c" />
 
 <img width="522" height="686" alt="{A6431287-D57F-4263-96FB-A68F943FCADB}" src="https://github.com/user-attachments/assets/414aed26-9cba-4f84-8e68-c8049dda9aec" />
