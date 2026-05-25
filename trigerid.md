@@ -265,6 +265,7 @@ Kontrolliks
 
 <img width="728" height="262" alt="{A4D25DC8-9EB0-4700-936C-4CA915F662E8}" src="https://github.com/user-attachments/assets/000438c6-accb-48bf-8c8a-3c2dc135fc08" />
 
+tulemus logi tabelis.
 <img width="716" height="51" alt="{FAB94F16-AE5F-4BAB-89C0-03F1F6502AE4}" src="https://github.com/user-attachments/assets/a4f93b49-2666-4665-a9dd-fe2adca3e35a" />
 
 
