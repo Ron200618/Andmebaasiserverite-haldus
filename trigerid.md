@@ -279,7 +279,10 @@ Kontroll
 
 <img width="703" height="68" alt="{9B541247-0790-4DA3-82BC-63C5547B1A3C}" src="https://github.com/user-attachments/assets/5e9fbda3-519e-40d3-b799-b8ec65c123db" />
 
-# kasutaja õigused 
+# kasutaja õigused ja selle testimine 
+
+<img width="628" height="404" alt="{A589165D-CD2C-4A27-A73A-7316C565901A}" src="https://github.com/user-attachments/assets/fd75fb94-1fd1-4904-8379-4996f29ff405" />
+
 
 <img width="768" height="252" alt="{2196BF59-98D0-482A-9D0C-80C8708ECBD5}" src="https://github.com/user-attachments/assets/6cb35c60-d24d-47c5-8d32-4e694825461f" />
 
