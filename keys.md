@@ -1,85 +1,83 @@
 ## „Andmebaasi võtmed (Keys)“
 
 # Primary Key
-unikaalne number veerus
-Milleks kasutatakse: Tagab, et tabelis ei ole identseid ridu. Võimaldab kiiret andmete otsingut ja on aluseks suhete loomisel teiste tabelitega.
-Mille poolest erineb: Tabelis saab olla ainult üks Primary Key. See ei tohi kunagi sisaldada tühja väärtust (NOT NULL) ega korduvaid väärtusi.
-<img width="309" height="105" alt="{5D5B6777-4220-460D-8424-C4A6B2FEBF01}" src="https://github.com/user-attachments/assets/f113f543-a0b7-4897-862f-ca2622d70db0" />
+Definitsioon: Unikaalne number või väärtus veerus, mis tuvastab iga rea üheselt
+Kasutamine: Tagab, et tabelis ei ole identseid ridu, võimaldab kiiret andmete otsingut ja on aluseks suhete loomisel teiste tabelitega
+Erinevus: Tabelis saab olla ainult üks peavõti. See ei tohi kunagi sisaldada tühja väärtust (NOT NULL) ega korduvaid väärtusi
+
+<img width="268" height="62" alt="Screenshot 2026-05-27 at 00 09 36" src="https://github.com/user-attachments/assets/a8230732-170b-41d2-938c-95696fbe0fc0" />
 
 
 # Foreign Key
-ühendab primary key-ga veergudes, et luua loogilis seoseid
-Milleks kasutatakse: Tabelitevaheliste seoste loomiseks ja hoidmiseks (näiteks One-to-Many suhe). Hoiab ära vigased andmed (ei luba lisada elanikku linna, mida pole olemas).
-Mille poolest erineb: Erinevalt Primary Key'st võib Foreign Key sisaldada korduvaid väärtusi ja ka NULL väärtusi. Ühes tabelis võib olla mitu välisvõtit.
-<img width="469" height="147" alt="{2B7EAFD4-F380-4D98-890C-AB887671F659}" src="https://github.com/user-attachments/assets/d6cba1bd-0428-4d09-8079-2a88dafa516a" />
+Definitsioon: Veerg, mis ühendab tabeli teise tabeli peavõtmega, et luua loogilisi seoseid
+Kasutamine: Tabelitevaheliste seoste (nt One-to-Many) hoidmiseks. See hoiab ära vigased andmed, lubamata viidata kirjele, mida seotud tabelis ei eksisteeri
+Erinevus: Erinevalt peavõtmest võib välisvõti sisaldada korduvaid väärtusi ja ka tühje (NULL) väärtusi. Ühes tabelis võib olla mitu välisvõtit
+
+<img width="555" height="133" alt="Screenshot 2026-05-27 at 00 13 20" src="https://github.com/user-attachments/assets/286522c7-43e6-4593-94e4-e8cd5889f462" />
 
 
 
 # Unique Key
-tagab, et kõik väärtused on unikaalsed
-Milleks kasutatakse: Andmete unikaalsuse nõudmiseks veergudes, mis ei ole peavõtmed (näiteks isikukood, e-maili aadress, kasutajanimi).
-Mille poolest erineb: Erinevalt Primary Key'st võib Unique Key veerg sisaldada NULL väärtust (MySQL-is isegi mitut NULL väärtust). Samuti võib ühes tabelis olla mitu Unique piiranguga veergu.
+Definitsioon: Piirang, mis tagab, et kõik väärtused veerus on kordumatud
+Kasutamine: Andmete unikaalsuse nõudmiseks veergudes, mis ei ole peavõtmed (nt isikukood, e-posti aadress)
+Erinevus: Erinevalt peavõtmest võib unikaalne võti sisaldada NULL väärtust ning ühes tabelis võib olla mitu unikaalse piiranguga veergu
 
-
-<img width="362" height="214" alt="{1DF7DA34-1413-494A-9B2B-7591E079894F}" src="https://github.com/user-attachments/assets/4a0e0a46-2379-4202-8889-9d5297434863" />
+<img width="329" height="81" alt="Screenshot 2026-05-27 at 00 14 17" src="https://github.com/user-attachments/assets/07dbf12d-7d14-4896-b5d9-62956b799c95" />
 
 
 
 # Simple Key
-Võti (olgu see Primary, Foreign või Unique), mis koosneb ainult ühest ainukesest veerust.
-Milleks kasutatakse: Kõige tavalisem ja lihtsam viis rea tuvastamiseks või sidumiseks (nt tavaline autonoomne id või isikukood).
-Mille poolest erineb: Erineb Composite ja Compound võtmetest, kuna ei vaja enda kõrvale ühtegi teist veergu, et oma funktsiooni täita.
+Definitsioon: Võti (olgu see Primary, Foreign või Unique), mis koosneb ainult ühest ainukesest veerust
+Kasutamine: Kõige tavalisem viis rea tuvastamiseks või tabelite sidumiseks (nt autonoomne ID)
+Erinevus: See ei vaja oma funktsiooni täitmiseks enda kõrvale ühtegi teist veergu
 
-
-<img width="277" height="198" alt="{FED8AEDC-203C-4E55-9328-55259198B22F}" src="https://github.com/user-attachments/assets/9aae4498-1afb-401a-83c4-5dc581191f76" />
 
 
 
 # Composite Key
-Võti, mis koosneb kahest või enamast veerust, et tagada rea unikaalsus.
-Milleks kasutatakse: Juhtudel, kui üksikud veerud eraldi võivad korduda, kuid nende kombinatsioon peab olema unikaalne (näiteks kinosaali kohad: rida ja iste).
-Mille poolest erineb: Koosneb mitmest veerust. Selles kombinatsioonis võivad alamveerud viidata ka täiesti erinevatele tabelitele (eriti vahetabelites).
-
-
-<img width="371" height="115" alt="{64D5711F-C7A8-4F8A-AC35-54DE496A53F1}" src="https://github.com/user-attachments/assets/9fe60bb3-75da-4bde-9ee2-ea0c69135112" />
+Definitsioon: Võti, mis koosneb kahest või enamast veerust, et tagada rea unikaalsus
+Kasutamine: Juhtudel, kus üksikud veerud võivad korduda, aga nende kombinatsioon peab olema unikaalne (nt istekoht saalis)
+Erinevus: Koosneb alati mitmest veerust, mis võivad viidata ka erinevatele tabelitele
+<img width="337" height="99" alt="Screenshot 2026-05-27 at 00 16 05" src="https://github.com/user-attachments/assets/badead3a-0ee1-4387-adaf-203924c2c5e5" />
 
 
 
 # Compound Key
-Liitvõtme (Composite Key) alamliik, kus kõik võtme koosseisu kuuluvad veerud on eraldiseisvalt välisvõtmed (Foreign Keys) teistesse tabelitesse.
-Milleks kasutatakse: Mitmetest-mitmele (Many-to-Many) suhete realiseerimiseks mõeldud vahetabelites.
-Mille poolest erineb: Kui Composite Key võib sisaldada ka tavalisi veerge (nagu kuupäev või arv), siis Compound Key koosneb rangelt ainult välisvõtmetest.
+Definitsioon: Liitvõtme alamliik, kus kõik võtme koosseisu kuuluvad veerud on eraldiseisvalt välisvõtmed teistesse tabelitesse
+Kasutamine: Many-to-Many suhete realiseerimiseks vahetabelites
+Erinevus: Erinevalt tavalisest liitvõtmest koosneb ühendvõti rangelt ainult teistele tabelitele viitavatest välisvõtmetest
 
 
-<img width="453" height="135" alt="{BFA71C7A-1022-40A1-A4CA-8635C44776A3}" src="https://github.com/user-attachments/assets/948cf57f-9119-4806-90e3-2be38b3e4903" />
+<img width="702" height="140" alt="Screenshot 2026-05-27 at 00 18 32" src="https://github.com/user-attachments/assets/c0a96601-f97d-4a33-bff4-3664d4956835" />
 
 
 
 # Superkey
-Ükskõik milline veergude kombinatsioon, mis võimaldab tabelis ridade unikaalset tuvastamist.
-Milleks kasutatakse: Teoreetiline mõiste andmebaasi projekteerimisel, millest hakatakse välja sõeluma reaalseid peavõtmeid.
-Mille poolest erineb: Superkey võib sisaldada "üleliigseid" veerge. Näiteks kombinatsioon (isik_id, eesnimi, perekonnanimi) on ülemvõti, sest juba isik_id üksinda teeb rea unikaalseks, ülejäänud andmed on lihtsalt kaasas.
-
-
-<img width="359" height="115" alt="{C92C93B4-0D7D-4FD1-B257-5DA8CC59D0ED}" src="https://github.com/user-attachments/assets/58cb10eb-f1cb-4df9-9c31-370cd8e916c1" />
-
-
+Definitsioon: Ükskõik milline veergude kombinatsioon, mis võimaldab ridade unikaalset tuvastamist
+Kasutamine: Teoreetiline mõiste projekteerimisel, millest hakatakse sõeluma reaalseid peavõtmeid
+Erinevus: Võib sisaldada "üleliigseid" veerge, mis ei ole unikaalsuseks hädavajalikud (nt ID + eesnimi)
+SQL Näide: (Teoreetiline näide: tabelis Tootajad on ülemvõtmeks kombinatsioon (AutoID, AutoKategooriaID)
 
 # Candidate key
-Minimaalne võimalik Superkey – veerg või veergude grupp, mis suudab rida unikaalselt tuvastada ilma ühegi üleliigse veeruta.
-Milleks kasutatakse: Nende seast valib andmebaasi looja välja selle ühe ja õige Primary Key.
-Mille poolest erineb: Erineb Superkey'st selle poolest, et sealt on kõik üleliigne eemaldatud. Tabelis võib olla mitu kandidaatvõtit (näiteks isiku puhul nii isik_id kui ka isikukood).
-<img width="346" height="137" alt="{456D5F04-9372-4D8F-ACDA-59E355A23F70}" src="https://github.com/user-attachments/assets/ec694213-efde-44a3-89bf-8f7f32bf67c0" />
-
+Definitsioon: Minimaalne võimalik ülemvõti – veerg või grupp, mis tuvastab rea ilma liigsete andmeteta
+Kasutamine: Nende seast valitakse lõplik peavõti (Primary Key)
+Erinevus: Erineb ülemvõtmest selle poolest, et sealt on eemaldatud kõik mittevajalikud veerud
+SQL Näide: (Tabelis on AutoID kandidaatvõti).
 
 
 
 # Key Alternate Key
-Kandidaatvõti (Candidate Key), mida ei valitud tabeli peavõtmeks (Primary Key).
-Milleks kasutatakse: Toimib süsteemis teisese unikaalsuse tagajana.
-Mille poolest erineb: Kui tabelis valitakse peavõtmeks töötaja_id, siis automaatselt saab teisest unikaalsest veerust (nt isikukood või email) alternatiivvõti.
+Definitsioon: Kandidaatvõti, mida ei valitud tabeli peavõtmeks
+Kasutamine: Toimib süsteemis teisese unikaalsuse tagajana
+Erinevus: Kui peavõti on määratud, saavad ülejäänud kandidaatvõtmed automaatselt alternatiivvõtmeteks
+SQL Näide: (Kui AutoID on peavõti, siis Isikukood on alternatiivvõti).
 
 
-<img width="380" height="139" alt="{BC8F4273-BED2-4A6F-89E1-B501E7E64A70}" src="https://github.com/user-attachments/assets/affb507b-7701-49e6-b644-579d06b48659" />
-
+# allikad
+https://www.techtarget.com/searchdatamanagement/answer/Definition-of-primary-super-foreign-and-candidate-key-in-the-DBMS
+https://www.techtarget.com/searchdatamanagement/answer/Definition-of-primary-super-foreign-and-candidate-key-in-the-DBMS
+https://en.wikipedia.org/wiki/Candidate_key
+https://unstop.com/blog/difference-between-super-key-and-candidate-key
+https://en.wikipedia.org/wiki/Surrogate_key
+https://en.wikipedia.org/wiki/Composite_key
 
