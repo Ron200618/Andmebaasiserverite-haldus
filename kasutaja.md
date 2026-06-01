@@ -1,4 +1,4 @@
-[Tagasi readme.md file](readme.md)
+[Tagasi readme.md file](readme.md) | [Select laused](select.md) | [Kodutöö](keys.md) | [Kasutaja loomine XAMPP-is](kasutaja.xampp.md) | [Triggerid](triger.md)
 
 
 ## Kasutajate autentimine ja õiguste haldamine
