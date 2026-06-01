@@ -88,7 +88,7 @@ GO
 
 
 -- ========================================================
--- 4. CREATE THE VIEW
+-- 4. CREATE THE VIEW --- Vaate, mis tahame saada, mis filteerib ära andmed ja annab need andmed, mida soovid saada
 -- ========================================================
 
 CREATE VIEW v_ActiveITEmployees AS
