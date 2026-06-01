@@ -1,3 +1,6 @@
+[kasutaja.md](README.md) | [Select laused](select.md) | [Vaated](vaade.md) | [Võtmed](keys.md) | [Protseduurid](protseduur.md) | [Kasutaja loomine XAMPP-is](kasutaja_xamp.md) | [Triggerid](triger.md)
+
+
 # Andmebaasid  Ron-Sebastian Lübek portfoolio ||| LOGITpe24
 andmebaasiga seotud sql kood ja konspektid
 
@@ -5,7 +8,6 @@ andmebaasiga seotud sql kood ja konspektid
 - DDL - Data Definition Language - andmebaasi struktuuri loomiseks
 - DML - Data Manipulation Language -andmete lisamine ja uuendamine tabelis - INSERT, UPDATE, DELETE
 
- [Select laused](select.md) | [Vaated](vaade.md) | [Võtmed](keys.md) | [Protseduurid](protseduur.md) | [Kasutaja loomine SQL Server](kasutaja.md) | [Kasutaja loomine XAMPP-is](kasutaja_xamp.md) | [Triggerid](triger.md)
 - [andmehaldussüsteemid](#-andmehaldussüsteemid)
 - [Põhimõisted](#-Põhimõisted)
 - [Andmetüübid](#-Andmetüübid)
