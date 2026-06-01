@@ -1,4 +1,4 @@
-[Tagasi readme.md file](README.md) | [Select laused](select.md) | [Kodutöö](keys.md) | [Kasutaja loomine SQL Server](kasutaja.md) | [Kasutaja loomine XAMPP-is](kasutaja.xampp.md) |
+[Tagasi readme.md file](README.md) | [Select laused](select.md) | [Kodutöö](keys.md) | [Kasutaja loomine SQL Server](kasutaja.md) | [Kasutaja loomine XAMPP-is](kasutaja.xamp.md) |
 
 
 
