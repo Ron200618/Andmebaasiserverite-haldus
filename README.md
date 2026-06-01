@@ -5,7 +5,7 @@ andmebaasiga seotud sql kood ja konspektid
 - DDL - Data Definition Language - andmebaasi struktuuri loomiseks
 - DML - Data Manipulation Language -andmete lisamine ja uuendamine tabelis - INSERT, UPDATE, DELETE
 
-[Select laused](select.md) | [Vaated](vaade.md) | [Võtmed](keys.md) | [Kasutaja loomine SQL Server](kasutaja.md) | [Kasutaja loomine XAMPP-is](kasutaja.xamp.md) | [Triggerid](triger.md)
+[Select laused](select.md) | [Vaated](vaade.md) | [Võtmed](keys.md) | [Kasutaja loomine SQL Server](kasutaja.md) | [Kasutaja loomine XAMPP-is](kasutaja_xamp.md) | [Triggerid](triger.md)
 - [andmehaldussüsteemid](#-andmehaldussüsteemid)
 - [Põhimõisted](#-Põhimõisted)
 - [Andmetüübid](#-Andmetüübid)
