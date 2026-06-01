@@ -16,24 +16,30 @@ CREATE VIEW vaate_nimi AS
 SELECT veerg1, veerg2
 FROM tabeli_nimi
 WHERE tingimus;
+```
 
 # Näide 1: Lihtne vaade
 Oletame, et sul on tabel kasutajad ja sa tahad näha ainult aktiivseid kasutajaid:
-```
+
+```sql
 CREATE VIEW AktiivsedKasutajad AS
 SELECT id, kasutajanimi, e_post
 FROM kasutajad
 WHERE staatus = 'aktiivne';
 ```
 
-Nüüd saad seda vaadet pärida täpselt nagu tavalist tabelit:
-```
+Nüüd saad seda vaadet pärida täpselt nagu tavalist tabelit
+
+
+```sql
 SELECT * FROM AktiivsedKasutajad;
 ```
 
 # Vaate kustutamine
 Kui sul pole vaadet enam vaja, saad selle eemaldada käruga DROP VIEW:
-```
+
+
+```sql
 DROP VIEW vaate_nimi;
 ```
 
