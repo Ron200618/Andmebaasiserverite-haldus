@@ -1,4 +1,4 @@
-[readme.md](README.md) | [Select laused](select.md) | [Vaated](vaade.md) | [Võtmed](keys.md) | [Kasutaja loomine SQL Server](kasutaja.md) | [Kasutaja loomine XAMPP-is](kasutaja_xamp.md) | [Triggerid](triger.md)
+[Üldmõisted](README.md) | [Select laused](select.md) | [Vaated](vaade.md) | [Kodutöö-keys](keys.md) | [Kasutaja loomine SQL Server](kasutaja.md) | [Kasutaja loomine XAMPP-is](kasutaja_xamp.md) | [Triggerid](triger.md)
 
 
 # Protseduur andmete lisamiseks 
