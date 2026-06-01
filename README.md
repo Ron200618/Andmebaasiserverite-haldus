@@ -1,9 +1,11 @@
-# Andmebaasid LOGITpe24
+# Andmebaasid  Ron-Sebastian Lübek portfoolio ||| LOGITpe24
 andmebaasiga seotud sql kood ja konspektid
 
 - SQL - Structured Query Language - Strukteeritud Päringu keel
 - DDL - Data Definition Language - andmebaasi struktuuri loomiseks
 - DML - Data Manipulation Language -andmete lisamine ja uuendamine tabelis - INSERT, UPDATE, DELETE
+
+[Select laused](select.md) | [Kodutöö](keys.md) | [Kasutaja loomine SQL Server](kasutaja.md) | [Triggerid](triger.md)
 
 ## sisukord
 - [andmehaldussüsteemid](#-andmehaldussüsteemid)
