@@ -1,4 +1,5 @@
-[Tagasi readme.md file](readme.md)
+[Tagasi readme.md file](readme.md) | [Select laused](select.md) | [Kodutöö](keys.md) | [Kasutaja loomine SQL Server](kasutaja.md) | [Kasutaja loomine XAMPP-is](kasutaja.xampp.md) |
+
 
 
 ## Triger - trigger - päästik
