@@ -1,3 +1,6 @@
+[Tagasi readme.md file](readme.md)
+
+
 
 <img width="1595" height="512" alt="{0BEC033B-7EAD-4859-8038-691F2A72B2B7}" src="https://github.com/user-attachments/assets/2c660aa1-3b13-4781-a7fd-53eb9167ac96" />
 
