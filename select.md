@@ -1,4 +1,4 @@
-[readme.md](README.md) | [Vaated](vaade.md) | [Võtmed](keys.md) | [Protseduurid](protseduur.md) | [Kasutaja loomine SQL Server](kasutaja.md) | [Kasutaja loomine XAMPP-is](kasutaja_xamp.md) | [Triggerid](triger.md)
+[Mõisted](README.md) | [Vaated](vaade.md) | [Kodtöö-keys](keys.md) | [Protseduurid](protseduur.md) | [Kasutaja loomine SQL Server](kasutaja.md) | [Kasutaja loomine XAMPP-is](kasutaja_xamp.md) | [Triggerid](triger.md)
 
 
 
