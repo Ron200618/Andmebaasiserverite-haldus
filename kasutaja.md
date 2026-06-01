@@ -1,4 +1,4 @@
-[Mõisted](README.md) | [Select laused](select.md) | [Vaated](vaade.md) | [Kodutöö-keys](keys.md) | [Protseduurid](protseduur.md) | [Kasutaja loomine XAMPP-is](kasutaja_xamp.md) | [Triggerid](triger.md)
+[Üldmõisted](README.md) | [Select laused](select.md) | [Vaated](vaade.md) | [Kodutöö-keys](keys.md) | [Protseduurid](protseduur.md) | [Kasutaja loomine XAMPP-is](kasutaja_xamp.md) | [Triggerid](triger.md)
 
 
 ## Kasutajate autentimine ja õiguste haldamine
