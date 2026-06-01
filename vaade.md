@@ -47,5 +47,84 @@ Kui sul pole vaadet enam vaja, saad selle eemaldada käruga DROP VIEW:
 DROP VIEW vaate_nimi;
 ```
 
+# päris näide 
+```
+-- Create the database
+CREATE DATABASE ronDB;
+GO
+
+-- Switch to your new database
+USE ronDB;
+GO
+
+
+-- ========================================================
+-- 2. CREATE THE BASE TABLE
+-- ========================================================
+
+CREATE TABLE Employees (
+    EmployeeID INT PRIMARY KEY IDENTITY(1,1),
+    FirstName VARCHAR(50) NOT NULL,
+    LastName VARCHAR(50) NOT NULL,
+    Department VARCHAR(50) NOT NULL,
+    Salary DECIMAL(10, 2) NOT NULL,
+    Status VARCHAR(20) NOT NULL
+);
+GO
+
+
+-- ========================================================
+-- 3. INSERT SAMPLE DATA
+-- ========================================================
+
+INSERT INTO Employees (FirstName, LastName, Department, Salary, Status)
+VALUES 
+('Alice', 'Smith', 'IT', 85000.00, 'Active'),
+('Bob', 'Jones', 'HR', 60000.00, 'Terminated'),
+('Charlie', 'Brown', 'IT', 90000.00, 'Active'),
+('Daisy', 'Miller', 'Sales', 55000.00, 'Active'),
+('Ethan', 'Hunt', 'IT', 95000.00, 'On Leave');
+GO
+
+
+-- ========================================================
+-- 4. CREATE THE VIEW
+-- ========================================================
+
+CREATE VIEW v_ActiveITEmployees AS
+SELECT 
+    EmployeeID, 
+    FirstName, 
+    LastName, 
+    Department
+FROM 
+    Employees
+WHERE 
+    Status = 'Active' 
+    AND Department = 'IT';
+GO
+
+
+-- ========================================================
+-- 5. RUN TESTING QUERIES
+-- ========================================================
+
+-- Look at the raw table data inside ronDB
+SELECT * FROM Employees;
+
+-- Look at your filtered view
+SELECT * FROM v_ActiveITEmployees;
+```
+tavaline vaade
+
+
+<img width="516" height="415" alt="{C65B8509-122C-4D37-A154-2CB8E8557641}" src="https://github.com/user-attachments/assets/0725c9b0-e30c-419b-8874-4159fdc6860c" />
+
+
+filteeritud vaade ehk meie vaade, mis tahtsime saada
+
+
+<img width="438" height="294" alt="{0143A448-F094-4B07-8AC4-10B323E207AD}" src="https://github.com/user-attachments/assets/eed6960d-4a11-459d-9947-82a4f6cd8fa1" />
+
 
 
