@@ -27,7 +27,30 @@ BEGIN
 END;
 ```
 # Dünaamiline SQL protseduuris (ALTER TABLE)
+```
+CREATE PROCEDURE muudatus
+    @tegevus varchar(10),
+    @tabelinimi varchar(25),
+    @veerunimi varchar(25),
+    @tyyp varchar(25) = NULL
+AS
+BEGIN
+    DECLARE @sqltegevus varchar(max);
+
+    SET @sqltegevus = CASE 
+        WHEN @tegevus = 'add' THEN 
+            CONCAT('ALTER TABLE ', @tabelinimi, ' ADD ', @veerunimi, ' ', @tyyp)
+
+        WHEN @tegevus = 'drop' THEN 
+            CONCAT('ALTER TABLE ', @tabelinimi, ' DROP COLUMN ', @veerunimi)
+    END;
+
+    PRINT @sqltegevus;
+    EXEC (@sqltegevus);
+END;
+```
 # Protseduur veeru lisamiseks või kustutamiseks 
+ Protseduur, mis kuvab toodete nime, hinna ja lisab automaatselt hinnangu
 ```
 CREATE PROCEDURE muudatus
     @tegevus varchar(10),
@@ -54,7 +77,6 @@ END;
 # Protseduur, mis kuvab toodete nime, hinna ja lisab automaatselt hinnangu
 kui hind < 2 → "soodne"
 muidu → "kallis"
-
 ```
 CREATE PROCEDURE kuvaTootedHinnaKategooriaga
 AS
