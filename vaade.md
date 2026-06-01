@@ -1,4 +1,4 @@
- [Select laused](select.md) | [Võtmed](keys.md) | [Protseduurid](protseduur.md) | [Kasutaja loomine SQL Server](kasutaja.md) | [Kasutaja loomine XAMPP-is](kasutaja_xamp.md) | [Triggerid](triger.md)
+[readme.md](README.md) | [Select laused](select.md) | [Võtmed](keys.md) | [Protseduurid](protseduur.md) | [Kasutaja loomine SQL Server](kasutaja.md) | [Kasutaja loomine XAMPP-is](kasutaja_xamp.md) | [Triggerid](triger.md)
 
 
 
