@@ -59,7 +59,7 @@ GO
 
 
 -- ========================================================
--- 2. CREATE THE BASE TABLE
+-- 2. Teeem tabeli
 -- ========================================================
 
 CREATE TABLE Employees (
@@ -74,7 +74,7 @@ GO
 
 
 -- ========================================================
--- 3. INSERT SAMPLE DATA
+-- 3. Tabelise paneme andmeid
 -- ========================================================
 
 INSERT INTO Employees (FirstName, LastName, Department, Salary, Status)
@@ -88,7 +88,7 @@ GO
 
 
 -- ========================================================
--- 4. CREATE THE VIEW --- Vaate, mis tahame saada, mis filteerib ära andmed ja annab need andmed, mida soovid saada
+-- 4. Vaate, mis tahame saada, mis filteerib ära andmed ja annab need andmed, mida soovid saada
 -- ========================================================
 
 CREATE VIEW v_ActiveITEmployees AS
@@ -106,7 +106,7 @@ GO
 
 
 -- ========================================================
--- 5. RUN TESTING QUERIES
+-- 5. Testime vaateid
 -- ========================================================
 
 -- Look at the raw table data inside ronDB
