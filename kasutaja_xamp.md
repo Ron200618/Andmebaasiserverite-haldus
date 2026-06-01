@@ -1,4 +1,5 @@
-[Select laused](select.md) | [Vaated](vaade.md) | [Võtmed](keys.md) | [Kasutaja loomine SQL Server](kasutaja.md) | [Triggerid](triger.md)
+ [Select laused](select.md) | [Vaated](vaade.md) | [Võtmed](keys.md) | [Protseduurid](protseduur.md) | [Kasutaja loomine SQL Server](kasutaja.md) | [Triggerid](triger.md)
+
 
 
 
