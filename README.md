@@ -1,4 +1,4 @@
- [Kasutaja loomine SQL Server](kasutaja.md) | [Select laused](select.md) | [Vaated](vaade.md) | [Võtmed](keys.md) | [Protseduurid](protseduur.md) | [Kasutaja loomine XAMPP-is](kasutaja_xamp.md) | [Triggerid](triger.md)
+ [Kasutaja loomine SQL Server](kasutaja.md) | [Select laused](select.md) | [Vaated](vaade.md) | [Kodutöö-keys](keys.md) | [Protseduurid](protseduur.md) | [Kasutaja loomine XAMPP-is](kasutaja_xamp.md) | [Triggerid](triger.md)
 
 
 # Andmebaasid  Ron-Sebastian Lübek portfoolio ||| LOGITpe24
