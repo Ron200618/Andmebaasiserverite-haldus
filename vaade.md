@@ -1,3 +1,6 @@
+[Select laused](select.md) | [Võtmed](keys.md) | [Kasutaja loomine SQL Server](kasutaja.md) | [Kasutaja loomine XAMPP-is](kasutaja_xamp.md) | [Triggerid](triger.md)
+
+
 # SQL Vaated (Views)
 
 Vaade (View) on virtuaalne tabel, mille sisu põhineb SQL-i päringu (`SELECT`) tulemusel. Vaade ise ei sisalda andmeid – andmed loetakse reaalajas alustabelitest sellel hetkel, kui vaadet päritakse.
