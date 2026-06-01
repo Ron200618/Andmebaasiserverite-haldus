@@ -1,4 +1,5 @@
-[Tagasi readme.md file](README.md) | [Select laused](select.md) | [Kasutaja loomine SQL Server](kasutaja.md) | [Kasutaja loomine XAMPP-is](kasutaja.xamp.md) | [Triggerid](triger.md)
+[Select laused](select.md) | [Vaated](vaade.md) | [Kasutaja loomine SQL Server](kasutaja.md) | [Kasutaja loomine XAMPP-is](kasutaja_xamp.md) | [Triggerid](triger.md)
+
 
 
 
