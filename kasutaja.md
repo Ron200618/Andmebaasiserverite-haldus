@@ -1,4 +1,8 @@
 ## Kasutajate autentimine ja õiguste haldamine
+
+[Tagasi readme.md file](readme.md)
+
+
 Mis on autentimine SQL Serveris
 ## Autentimine tähendab kasutaja tuvastamist ehk kontrollimist, kas kasutajal on õigus SQL Serverise sisse logida
 
