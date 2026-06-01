@@ -1,5 +1,5 @@
 [Tagasi readme.md file](readme.md) | [Select laused](select.md) | [Kasutaja loomine SQL Server](kasutaja.md) | [Kasutaja loomine XAMPP-is](kasutaja.xampp.md) | [Triggerid](triger.md)
-****
+
 
 
 ## „Andmebaasi võtmed (Keys)“
