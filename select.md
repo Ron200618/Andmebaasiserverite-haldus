@@ -1,4 +1,4 @@
-[Tagasi readme.md file](README.md) | [Kodutöö](keys.md) | [Kasutaja loomine SQL Server](kasutaja.md) | [Kasutaja loomine XAMPP-is](kasutaja.xamp.md) | [Triggerid](triger.md)
+[Vaated](vaade.md) | [Kodutöö](keys.md) | [Kasutaja loomine SQL Server](kasutaja.md) | [Kasutaja loomine XAMPP-is](kasutaja_xamp.md) | [Triggerid](triger.md)
 
 
 
